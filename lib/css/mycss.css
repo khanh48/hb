@@ -1,0 +1,155 @@
+body{
+    font-family: cus;
+    font-weight: bold;
+    background-image: url("../img/love.png");
+    background-size: 100%;
+    margin: 0;
+    cursor: default;
+}
+
+.after.before{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.b1{
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #fbefe3;
+    background-image: url('../img/marrychristmas0.gif');
+    background-size: 30% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: hien;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+.content{
+    color: tomato;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 222, 179, 0.3);
+}
+.text{
+    padding-top: 20px;
+    opacity: 0%;
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    animation-name: none;
+    animation-delay: 1s;
+    animation-timing-function:cubic-bezier(1, 1, 0, 1);
+    animation-duration: 20s;
+}
+button:focus{
+    outline: none;
+}
+.nut{
+    position: fixed;
+    border-radius: 20px;
+    background-color: brown;
+    height: 200px;
+    width: 250px;
+}
+.qs{
+    display: none;
+}
+.nd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    width: 100%;
+    height: 70%;
+}
+.but{
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height: 30%;
+}
+.but button{
+    font-family: cus;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgb(247, 239, 210);
+    margin: 1.5px;
+    width: 40%;
+    height: 60%;
+    border: none;
+    border-radius: 5px;
+}
+.ib{
+    display: none;
+}
+.but button:hover{
+    cursor: pointer;
+    background-color: rgb(218, 206, 160);
+}
+.but button:active{
+    
+    background-color: rgb(196, 185, 141);
+}
+
+@media (max-width: 767px){
+    .nut{
+        left: calc(50% - 100px);
+        top: calc(100% - 155px);
+        height: 150px;
+        width: 200px;
+    }
+    .nd{
+        font-size: 25px;
+    }
+    .fonth{
+        font-size: 35px;
+    }
+    .fontc{
+        font-size: 25px;
+    }
+    .b1{
+        background-size: 50% auto;
+    }
+}
+@media (min-width: 768px){
+    .nut{
+        left: calc(50% - 125px);
+        top: calc(100% - 210px);
+        height: 200px;
+        width: 250px;
+    }
+    .nd{
+        font-size: 30px;
+    }
+    .fonth{
+        font-size: 40px;
+    }
+    .fontc{
+        font-size: 30px;
+    }
+    .b1{
+        background-size: 30% auto;
+    }
+}
+
+@keyframes hien{
+    0%{opacity: 100%;}
+    25%{opacity: 0%;}
+    50%{opacity: 100%;}
+    75%{opacity: 0%;}
+}
+@keyframes anchu{
+    0%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
+@font-face {
+    font-family: cus;
+    src: url('../font/QX_LatypeSans.ttf') format('truetype');
+    font-style: normal;
+    font-weight:normal;
+}
